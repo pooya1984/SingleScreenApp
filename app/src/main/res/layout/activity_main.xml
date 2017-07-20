@@ -16,7 +16,8 @@
         android:id="@+id/for_ground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/martini_bar" />
+        android:src="@drawable/martini_bar"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/welcome"
@@ -51,33 +52,6 @@
         android:fontFamily="s"
         android:textAppearance="?android:textAppearanceMedium"
         android:textColor="@color/colorDetail" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/open_our"
-        android:layout_centerHorizontal="true">
-
-        <TextView
-            android:id="@+id/weekend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="Weekend"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@color/colorDetail" />
-
-        <TextView
-            android:id="@+id/weekend_our"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/welcome"
-            android:layout_marginLeft="20dp"
-            android:text="18-4"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@color/colorDetail" />
-
-    </LinearLayout>
     <LinearLayout
         android:id="@+id/open_our"
         android:layout_marginTop="16dp"
@@ -103,6 +77,31 @@
             android:layout_below="@id/welcome"
             android:layout_marginLeft="20dp"
             android:text="20-3"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorDetail" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/open_our"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/weekend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Weekend"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorDetail" />
+
+        <TextView
+            android:id="@+id/weekend_our"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:layout_marginLeft="20dp"
+            android:text="18-4"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@color/colorDetail" />
 
