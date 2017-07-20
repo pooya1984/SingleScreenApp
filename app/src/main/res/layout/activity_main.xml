@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.singlescreenapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dark_background" />
+
+    <ImageView
+        android:id="@+id/for_ground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/martini_bar" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/for_ground"
+        android:text="@string/welcome"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorTitle"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:text="@string/name"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorTitle"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar"
+        android:text="@string/subtitle"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="s"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorDetail" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/open_our"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/weekend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Weekend"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorDetail" />
+
+        <TextView
+            android:id="@+id/weekend_our"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:layout_marginLeft="20dp"
+            android:text="18-4"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorDetail" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/open_our"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub_title"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:layout_marginLeft="20dp"
+            android:text="Mo-Fr"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorDetail" />
+
+        <TextView
+            android:id="@+id/day_our"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:layout_marginLeft="20dp"
+            android:text="20-3"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorDetail" />
+
+    </LinearLayout>
+</RelativeLayout>
